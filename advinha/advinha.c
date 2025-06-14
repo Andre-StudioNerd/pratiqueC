@@ -2,16 +2,17 @@
 #include <locale.h>
 
 int main() {
-  setlocale(LC_ALL, "Portuguese");
-  int x;
-  int y;
+    setlocale(LC_ALL, "Portuguese");
+    // imprime cabecalho do nosso jogo
+    printf("******************************************\n");
+    printf(" Bem-vindo ao nosso jogo de adivinhação  \n");
+    printf("******************************************\n");
+    int numerosecreto = 42;
+    int chute;
 
-  printf("Primeiro valor: ");
-  scanf("%d", &x);
-
-  printf("Segundo valor: ");
-  scanf("%d", &y);
-
-  int m = x * y;
-  printf("A multiplicação de %d por %d é igual a %d\n", x, y, m);
+    printf("Qual é o seu chute? ");
+    scanf("%d", &chute);
+    printf("Seu chute foi %d\n", chute);
+    printf("%d %d\n", numerosecreto, chute);
+    return 0;
 }
